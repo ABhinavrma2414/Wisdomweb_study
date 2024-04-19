@@ -1,0 +1,236 @@
+*{
+    --container-width-1: 80%;
+    --container-width-2: 90%;
+    --container-width-3: 94%;
+}
+
+.playlist-details{
+    width: var(--container-width-1);
+    margin: 0 auto;
+}
+
+.tutor img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: .3rem solid rgb(1, 1, 98);
+}
+
+.playlist-details h1{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.column{
+    padding-top: 1rem;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.tutor h3{
+    padding: .8rem 0;
+}
+
+.tutor span{
+    padding-bottom: 1rem;
+}
+
+.details h3{
+    font-size: 1.3rem;
+    padding: .8rem 0;
+}
+/* .column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.playlist-videos{
+    width: var(--container-width-1);
+    margin: -5rem auto;
+    margin-bottom: 1rem;
+}
+
+.playlist-videos .heading{
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.box-container a{
+margin-bottom: 1.5rem;
+}
+
+.box h3{
+    font-size: 1.2rem;
+    margin-top: .8rem;
+}
+
+.details p {
+margin-bottom: 1.3rem;
+}
+
+.playlist-details .row .column .tutor{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.playlist-videos .box-container .box{
+    position: relative;
+    padding: 1rem;
+}
+
+.playlist-videos .box-container .box img{
+border: 4px solid rgb(34, 34, 116);
+}
+
+.playlist-videos .box-container .box span{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  left: 1rem;
+  height: 13rem;
+  background-color: rgb(0,0,0, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #FFF;
+  display:none;
+}
+
+.playlist-videos .box-container .box:hover span{
+ display: flex;
+}
+
+.playlist-videos .box-container .box:hover h3{
+    color: rgb(174, 169, 169);
+}
+
+
+
+.user_comment{
+    margin-top: -4rem;
+    background: rgb(2, 2, 41);
+}
+
+.show_comment{
+    width: var(--container-width-1);
+    margin: 0 auto;
+    background:rgb(7, 7, 56);
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.show_comment .text1{
+    background: #751C86;
+    padding: .9rem 1.2rem;
+    margin: .5rem 0;
+    font-size: 1rem;
+    position: relative;
+    z-index: 0;
+}
+
+.show_comment .text1::before{
+ content: "";
+ position: absolute;
+ top: -1rem; left: 1.5rem;
+ height: 1.2rem;
+ width: 2rem;
+ background:#751C86 ;
+ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.user{
+    display: flex;
+}
+
+.info_tutor{
+     margin:1.3rem 1rem
+    }
+
+.info_tutor h4{
+     margin-bottom: .5rem;
+    }
+
+.user img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1rem solid #751C86;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .playlist-details{
+        width: var(--container-width-2);
+        margin: 0 auto;
+    }
+    .playlist-videos{
+        width: var(--container-width-2);
+        margin: -5rem auto;
+        margin-bottom: 1rem;
+    }
+    .playlist-videos .box-container .box {
+        position: relative;
+        padding: 0rem;
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        gap: 1.5rem;
+    }
+    .box-container a {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:750px){
+    .playlist-details{
+        width: var(--container-width-3);
+        margin: -.8 auto;
+    }
+    .playlist-videos{
+        width: var(--container-width-3);
+        margin: -6rem auto;
+        margin-bottom: 1rem;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:620px){
+    .playlist-details{
+        width: var(--container-width-3);
+        margin: 0 auto;
+        margin-top: -1rem;
+    }
+    .playlist-videos{
+        width: var(--container-width-3);
+        margin: -7rem auto;
+        margin-bottom: 1rem;
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 1.5rem;
+    }
+}
+

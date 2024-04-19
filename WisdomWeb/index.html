@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WisdomWeb- online education platform </title>
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- googleicon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--swiperjs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div class=" container nav_container">
+            <a href="index.html">
+                <h3>WISDOMWEB</h3>
+            </a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Aboutus</a></li>
+                <li><a href="login.html" id="loginButton" class=" btn_log btn-primary">login</a>
+                    <button id="signoutButton" class=" btn_log btn-primary" style="display: none;">Sign Out</button>
+                </li>
+            </ul>
+            <button id="open-menu-btn"><span class="material-symbols-outlined">
+                    menu
+                </span></button>
+            <button id="close-menu-btn"><span class="material-symbols-outlined">
+                    close
+                </span></button>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Grow your skills to advance your carrer path</h1>
+                <p>"Experience WisdomWeb's dynamic learning ecosystem. Excel in Python, cybersecurity, trading, Google Ads, and beyond. Unleash your potential with our diverse and impactful courses for a successful future."</p>
+                <a href="courses.html" class="btn btn-primary">Get started</a>
+            </div>
+            <div class="header_right">
+                <div class="header_right-image">
+                    <img src="images/img1.png">
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>categories</h1>
+                <p>Explore a rich tapestry of knowledge across diverse domains at Wisdom Web. From mastering blockchain technology to unleashing your creative prowess in graphics design, delving into finance intricacies, orchestrating musical brilliance, decoding marketing strategies, to honing business acumen – we cater to multifaceted learning journeys.</p>
+                <!-- <a href="#" class="btn">Learn more</a> -->
+            </div>
+
+
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            currency_bitcoin
+                        </span></span>
+                    <h5>Blockchain</h5>
+                    <p>Blockchain: Secure, decentralized, transformative technology.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            palette
+                        </span></span>
+                    <h5>Graphics Design</h5>
+                    <p>Graphics design: Creativity, aesthetics, visual communication mastery.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            monetization_on
+                        </span></span>
+                    <h5>Finance</h5>
+                    <p>Finance: Managing money, investments, economic decisions.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            music_note
+                        </span></span>
+                    <h5>Music</h5>
+                    <p>Music: Harmony, rhythm, expression, universal language.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            campaign
+                        </span></span>
+                    <h5>Marketing</h5>
+                    <p>Marketing: Promotion, persuasion, strategy, customer engagement.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><span class="material-symbols-outlined">
+                            business_center
+                        </span></span>
+                    <h5>Business</h5>
+                    <p>
+                        Business: Strategy, growth, innovation, leadership, adaptability.</p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="container courses_container">
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="images/html.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>Introduction to HTML</h4>
+                    <p><span style="font-weight: bold;">Skills you'll gain: </span> Computer Programming, Front-End Web
+                        Development, HTML and CSS, Web Design
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="images/course2.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>Build a Portfolie Website with HTML, CSS, Javascript </h4>
+                    <p><span style="font-weight: bold;">Skills you'll gain: </span> HTML and CSS, Javascript, Web
+                        Development
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="images/python.jpg">
+                </div>
+                <div class="course_info">
+                    <h4>Python for Data Science,AI &development</h4>
+                    <p><span style="font-weight: bold;">skills you'll gain:</span> Python Programming, Data Analysis
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">learn More</a>
+                </div>
+            </article>
+            </li>
+        </div>
+    </section>
+
+
+
+    <section class="freq">
+        <h2>Frequently Asked Question</h2>
+        <div class="container freq_container">
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>How do I know the Write courses for me?</h4>
+                    <p>Identify interests, career goals. Research courses, consider content, reviews, and accreditation.
+                        Choose based on relevance, learning style, and affordability.</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>what type of courses do you offer?</h4>
+                    <p>Wisdom is your gateway to diverse online courses, featuring web development, Python, Microsoft Excel, WordPress, and more. You can also check our courses section Elevate your skills today!</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Can I acess the course on any device?</h4>
+                    <p>Absolutely! Wisdom Web's responsive design ensures seamless access to courses on any device, providing flexibility and convenience for your learning journey.</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Is technical support available for users?</h4>
+                    <p>
+                        Yes, Wisdom Web provides technical support for users. A dedicated "Contact Us" page enables direct communication with the website's data manager for assistance and inquiries.</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Do you offer a trial peroid for each course?</h4>
+                    <p>
+                        WisdomWeb is entirely free, offering full access to all courses without the need for a trial period. Learn without limitations and enhance your skills at no cost.</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Do I need specific software for the courses?</h4>
+                    <p>No, Wisdom Web courses are accessible directly through a web browser. No specific software is required, offering convenient and hassle-free learning experiences for </p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Can I switch between courses freely?</h4>
+                    <p>Absolutely! WisdomWeb allows you to seamlessly switch between courses at your convenience. Enjoy the flexibility of exploring diverse subjects without any restrictions.</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Is the platform compatible with various browsers?</h4>
+                    <p>Absolutely, Wisdom Web ensures compatibility with all major browsers. Its responsive design guarantees a seamless learning experience across different platforms for users' convenience</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Can I preview course content before enrolling?</h4>
+                    <p>Certainly! "Yes, WisdomWeb allows users to preview course content before enrolling, ensuring learners can make informed decisions about their educational journey."</p>
+                </div>
+            </article>
+
+            <article class="feq">
+                <div class="feq_icon">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </div>
+                <div class="question_answer">
+                    <h4>Any age restrictions for enrolling in courses?</h4>
+                    <p>WisdomWeb has no age restrictions; learners of all ages can enroll in courses freely. Embrace lifelong learning without limitations on this inclusive platform.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+
+    <section class="container testimonials_container mySwiper">
+        <h2>student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar1.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Diana nicole</h5>
+                    <small>Android Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Diana Nicole excels in Android development, proficient in Kotlin, Java, UI/UX design, debugging,
+                        and API integration for seamless applications.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar2.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Adam</h5>
+                    <small>Web Developer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Adam excels as a web developer, proficient in HTML, CSS, and JavaScript. His skills span
+                        front-end and back-end development, ensuring versatility in projects.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar3.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Travis</h5>
+                    <small>Graphics Designer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+
+                        Travis, a skilled graphics designer, brings creativity to life with expertise in visual aesthetics, branding, and digital artistry.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar4.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>scarlett</h5>
+                    <small>Product Designer</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>Scarlett, a skilled product designer, blends creativity and functionality to craft innovative and
+                        user-centric designs, elevating the overall product experience.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar5.jpg">
+                </div>
+                <div class="testimonial_info">
+                    <h5>Emma</h5>
+                    <small>Data Analyst</small>
+                </div>
+                <div class="testimonial_body">
+                    <p>
+                        Emma, a proficient data analyst, extracts meaningful insights, employs statistical methods, and utilizes data visualization tools for informed decision-making.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>WISDOMWEB</h4>
+                </a>
+                <p>
+                    WisdomWeb Elevate skills, diverse courses, shaping successful online learning journeys.
+                </p>
+            </div>
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalink">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">Aboutus</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 78998899</p>
+                    <p>WisdomWeb@gmail.com</p>
+                </div>
+                <ul class="footer_socials">
+                    <li><a href="http://www.instagram.com" target="_blank"><img
+                                src="https://unicons.iconscout.com/release/v4.0.8/svg/line/instagram.svg"></a>
+                    </li>
+                    <li><a href="http://www.facebook.com" target="_blank"><img
+                                src="https://unicons.iconscout.com/release/v4.0.8/svg/line/facebook.svg"></a>
+                    </li>
+                    <li><a href="http://www.twitter.com" target="_blank"><img
+                                src="https://unicons.iconscout.com/release/v4.0.8/svg/line/twitter.svg"></a>
+                    </li>
+                    <li><a href="http://www.linkedin.com" target="_blank"><img
+                                src="https://unicons.iconscout.com/release/v4.0.8/svg/line/linkedin.svg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small> Copyright &copy; WISDOMWEB</small>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <script src="main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            //   when window width is above 650px
+            breakpoints: {
+                650: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+
+    
+</body>
+
+</html>

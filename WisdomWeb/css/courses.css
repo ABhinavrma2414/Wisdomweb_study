@@ -1,0 +1,25 @@
+.courses{
+    margin-top: 1.5rem;
+}
+.courses_container{
+grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 1024px){
+    .courses_container{
+        width: var(--container-width-2);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .courses {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 620px){
+    .courses_container{
+        width: var(--container-width-3);
+     grid-template-columns:1fr;
+     gap: 0;
+    }
+    .courses {
+        margin-top: .5rem;
+    }
+}
